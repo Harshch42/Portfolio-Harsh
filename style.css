@@ -7,6 +7,7 @@ body {
     background-color: rgb(0, 0, 33);
     font-family: 'Poppins', sans-serif;
     color: white;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -76,7 +77,9 @@ main hr {
     border-radius: 6px;
     font-size: 20px;
     cursor: pointer;
+    text-decoration: none;
 }
+
 
 .rightSection {
     width: 34px;
@@ -114,6 +117,115 @@ main hr {
     width: 150px;
     font-size: 10px;
 }
+
+/* CSS for About Me Section */
+
+.aboutMeSection {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    padding: 0px 0;
+    text-align: center;
+}
+
+.aboutMeContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.aboutMeText {
+    /* flex: 1; */
+    text-align: center;
+    padding: 50px 200px;
+}
+
+.profile-pic {
+    /* flex: 1; */
+    text-align: center;
+    padding: 50px 200px;
+}
+
+.profile-pic img {
+    width: 42%;
+    border-radius: 80%;
+    margin-left: 20px;
+}
+
+
+
+.aboutMeSection h1 {
+    font-size: 40px;
+    /* margin: 0; */
+    /* padding: 20px 0; */
+    text-align: center;
+}
+
+
+
+.aboutMeText p {
+    /* margin: 10px 20px; */
+    font-size: 1.5rem;
+    /* line-height: 1.5; */
+    text-align: center;
+    /* padding: 0 40%; */
+}
+
+.purple {
+    color: blueviolet;
+}
+/* CSS for Skills Section */
+
+.skillsSection {
+    margin-top: 40px;
+    text-align: left; /* Align text to the left */
+}
+
+
+.skillsSection ul {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 200px;
+    text-align: left;
+
+}
+
+.skillCategory {
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 10px; /* Add spacing between category and skills */
+}
+
+.skillsSection li {
+    margin: 10px 0; /* Add spacing between each skill category */
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.skillsSection li::before {
+    content: "•"; /* Bullet point character */
+    font-size: 18px;
+    margin-right: 10px; /* Add spacing between bullet point and text */
+}
+
+
+/* .skillItem { */
+    /* display: flex; Use flexbox for proper alignment */
+    /* align-items: center; Align text and bullet points vertically */
+    /* margin-left: 20px; Adjust the left margin as needed */
+/* } */
+
+/* .skillItem::before {
+    content: "\2022"; /* Bullet point character */
+    /* color: #1e2167; /* Color of the bullet point */
+    /* font-size: 16px;
+    margin-right: 10px; /* Add some spacing between bullet point and text */
+    /* align-self: flex-start; Align the bullet point with the top of the text */
+/* }  */
+
+
+
+/* Add more styles as needed */
+
 
 /* Work Section */
 
@@ -180,27 +292,183 @@ main hr {
     display: inline-block;
 }
 
-/* Footer */
 
-footer {
+
+
+/* Projects Section */
+
+.projectsSection {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.projectsSection h1 {
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.projectCategory {
+    margin-top: 40px;
+}
+
+.projectCategory h2 {
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.projectsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectItem {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    max-width: 350px;
+}
+
+.projectItem img {
+    width: 350px;
+    height: 180px;
+    margin-bottom: 10px;
+}
+
+.projectDetails h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.projectDetails p {
+    margin: 10px 0;
+}
+
+.projectDetails a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(211, 206, 149);
+}
+
+.technologiesUsed {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.techBox {
+    background-color: #1e2167;
+    color: white;
+    padding: 6px 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+
+.githubLink {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Coding Profiles Section */
+.codingProfiles {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.codingProfiles h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.profileItem {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    flex-basis: calc(50% - 30px); /* Adjust width for three items on each side */
+    justify-content: center; /* Center items horizontally */
+}
+
+.profileItem:hover {
+    font-size: 18px;
+}
+
+.profileItem img {
+    width: 30px;
+}
+
+.profileIcon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #d3ce95;
+}
+
+.profileLink {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.profileLink:hover {
+    color: #75e3e3;
+    transition: color 0.3s;
+}
+
+/* Fixed Icons Contact */
+.fixed-icons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border-top-right-radius: 5px;
+}
+
+.fixed-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    margin: 5px;
+}
+
+.fixed-icons a:hover {
+    color: #75e3e3;
+    transform: scale(1.2); 
+}
+
+
+/* Footer */
+ footer {
     background-color: #0e0e1a;
 }
 
 .footer {
     display: flex;
     padding: 23px 10px;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-}
-
-.footer ul {
-    list-style: none;
-    padding: 10px;
-}
-
-.footer > div {
-    width: 120px;
-    margin: 10px 0;
 }
 
 footer .footer-rights {
@@ -208,6 +476,7 @@ footer .footer-rights {
     color: gray;
     padding: 12px 0;
 }
+
 
 /* Add responsive styles for tablets */
 @media screen and (max-width: 768px) {
@@ -235,6 +504,7 @@ footer .footer-rights {
     .leftSection .buttons {
         padding: 20px 0;
     }
+    
 
     .date-box {
         font-size: 0.8rem;
@@ -257,6 +527,21 @@ footer .footer-rights {
     nav ul li {
         margin: 15px 0;
     }
+    .profileItem {
+        flex-basis: calc(50% - 20px); /* Adjust width for two items on each side */
+    }
+    .fixed-icons {
+        flex-direction: row;
+        justify-content: flex-start;
+        bottom: 10px;
+        left: 10px;
+        padding: 5px;
+    }
+
+    .fixed-icons a {
+        font-size: 18px;
+        margin: 0 10px;
+    }
 }
 
 /* Add responsive styles for smaller screens (e.g., smartphones) */
@@ -276,5 +561,7 @@ footer .footer-rights {
     .experienceDetails ul {
         font-size: 0.9rem;
     }
+    .profileItem {
+        flex-basis: 100%; /* Full width for one item per row */
+    }
 }
-

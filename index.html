@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harsh - Developer Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+
 </head>
 <body>
     <header>
@@ -13,30 +17,28 @@
                 Harsh Chaudhari
             </div>
             <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                <ul class="navbar">
+                    <li><a href="#firstSection">Home</a></li>
+                    <li><a href="#aboutMeSection">About Me</a></li>
+                    <li><a href="#workSection">Work Experience</a></li>
+                    <li><a href="#projectsSection">Projects</a></li>
+                    <li><a href="#codingProfiles">Coding Profiles</a></li>
                 </ul>
             </div>
         </nav>
     </header>    
 
     <main>
-        <section class="firstSection">
+        <section id = 'firstSection' class="firstSection">
             <div class="leftSection">
+                <!-- <div class="profile-photo">
+                    <img src="profile_pic.jpg" alt="profile_pic">
+                </div> -->
                 Hi, my name is <span class="purple">Harsh</span> 
                 <div>and I am a passionate</div>
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn">
-                        Download Resume
-                    </button>
-                    <button class="btn">
-                        Github
-                    </button>
+                    <a href="https://drive.google.com/file/d/16hZXPDM2vWxXxREkG2I1aTG_om3W9nZJ/view?usp=sharing" target="_blank" class="btn">Resume</a>
                 </div>
             </div>
             <div class="rightSection">
@@ -45,53 +47,41 @@
         </section>
     <hr>
 
-        <!-- <section class="secondSection">
-            <h1>Work Experience</h1>
-
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="DS_logo.png" alt="">
-                    <div class="vertical-title">
-                        Data Science Intern()
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, recusandae. Veniam, sint?
-                    </div>
-                </div>
-
-                <div class="vertical">
-                    <img class="image-top" src="DS_logo.png" alt="">
-                    <div class="vertical-title">
-                        Data Science Intern()
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, recusandae. Veniam, sint?
-                    </div>
-                </div>
-
-                <div class="vertical">
-                    <img class="image-top" src="DS_logo.png" alt="">
-                    <div class="vertical-title">
-                        Data Science Intern()
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, recusandae. Veniam, sint?
-                    </div>
-                </div>
-
-                <div class="vertical">
-                    <img class="image-top" src="DS_logo.png" alt="">
-                    <div class="vertical-title">
-                        Data Science Intern()
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, recusandae. Veniam, sint?
-                    </div>
-                </div>
+    <!-- About Me -->
+    <section id = 'aboutMeSection' class="aboutMeSection">
+        <h1>About Me</h1>
+        <div class="aboutMeContent">
+            
+            <div class="aboutMeText">
+                
+                
+                
+                <p>Hello! I'm <span class="purple">Harsh Chaudhari</span>, a data enthusiast with a strong passion for working with data and generating insights. With a background in data analysis and machine learning projects, I am experienced in extracting valuable information from complex datasets. I am dedicated to delivering high-quality results on time, consistently giving my best effort to complete tasks efficiently and effectively.</p>
             </div>
-        </section> -->
-
-        <section class="workSection">
+            <!-- <div class="profile-pic">
+                <img src="images/profile_pic.jpg" alt="Harsh Chaudhari">
+            </div> -->
+            
+            
+        </div>
+        <h1>Skills</h1>
+        <div class="skillsSection">
+            <ul>
+                <li><span class="skillCategory">Programming Languages:</span> Python (Numpy, Pandas, Matplotlib), SQL, HTML, JavaScript.</li>
+                <br>
+                <li><span class="skillCategory">Developer Tools:</span> Jupyter notebook, VS Code, PyCharm, Tableau Desktop, MySQL Workbench, Power BI desktop, PostgreSQL.</li>
+                <br>
+                <li><span class="skillCategory">Technologies:</span> Tableau, Power BI, Machine Learning, NLP, Flask, FastAPI, Tkinter.</li>
+                <br>
+                <li><span class="skillCategory">Database:</span> PostgreSQL, MySQL, DB Browser.</li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    <hr>
+    <!-- Work Experience -->
+        <section id = 'workSection' class="workSection">
             <h1>Work Experience</h1>
             <div class="workExperience">
 
@@ -168,47 +158,319 @@
                         <a href="https://www.phntechnology.com/" target="_blank">phntechnology.com</a>
                     </div>
                 </div>
-
+            
                 
             </div>
-        </section>
         
+        </section>
+        <hr>
+    <!-- Projects -->
+    <section id = 'projectsSection' class="projectsSection">
+        <h1>Projects</h1>
+
+        <!-- Data Science Projects -->
+        <section class="projectCategory">
+            <h2>Data Science Projects</h2>
+            
+            <div class="projectsList">
+                <!-- Movie Recommendation System -->
+                <div class="projectItem">
+                    <img src="images/Movie_rec.png" alt="Movie Recommendation System">
+                    <div class="projectDetails">
+                        <h2>Movie Recommendation System</h2>
+                        <br>
+                        <ul>
+                            <li>Implemented Content-Based, Collaborative Filtering, and Genre-based recommendations techniques.</li>
+                            <li>Used Scikit-Learn, Cosine Similarity, Weighted Ratings, Searching and Sorting algorithms.</li>
+                        </ul>
+                        <br><br><br>
+                        <a href="https://github.com/Harshch42/movie-recommendation-system.git" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 .154a8 8 0 0 0-2.534 15.635c.4.07.546-.174.546-.385 0-.19-.007-.692-.01-1.36-2.01.368-2.44-.49-2.44-.49-.33-.838-.805-1.06-.805-1.06-.656-.448.05-.44.05-.44.725.05 1.107.74 1.107.74.642 1.1 1.678.783 2.085.597.065-.463.252-.78.46-.958-1.61-.183-3.3-.805-3.3-3.578 0-.79.28-1.44.74-1.95-.08-.183-.32-.925.064-1.92 0 0 .6-.195 1.98.74a6.72 6.72 0 0 1 1.8-.245c.61.003 1.22.08 1.8.244 1.37-.936 1.97-.74 1.97-.74.384.995.144 1.737.07 1.92.46.51.74 1.16.74 1.95 0 2.777-1.69 3.39-3.31 3.57.26.23.49.672.49 1.36 0 .984-.008 1.777-.008 1.995 0 .214.145.46.55.384A8.003 8.003 0 0 0 8 .154z"/>
+                        </svg> GitHub
+                    </a>
+                    </div>
+                    <div class="technologiesUsed">
+                        <div class="techBox">Python</div>
+                        <div class="techBox">Machine Learning</div>
+                        <div class="techBox">Scikit-learn</div>
+                        <div class="techBox">Streamlit</div>
+                    </div>
+                </div>
+
+                <!-- Spam Classifier -->
+                <div class="projectItem">
+                    <img src="images/spam_image.png" alt="Spam-Classifier">
+                    <div class="projectDetails">
+                        <h2>Spam-Classifier</h2>
+                        <br><br>
+                        <ul>
+                            <li>A Spam Classifier employing multiple machine learning techniques and feature extraction methods to distinguish between spam and non-spam messages.</li>
+                            <li>Implemented for user-friendly deployment via FastAPI, ensuring accurate message classification..</li>
+                        </ul>
+                        <br>
+                        <a href="https://github.com/Harshch42/Spam-Classifier.git" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 .154a8 8 0 0 0-2.534 15.635c.4.07.546-.174.546-.385 0-.19-.007-.692-.01-1.36-2.01.368-2.44-.49-2.44-.49-.33-.838-.805-1.06-.805-1.06-.656-.448.05-.44.05-.44.725.05 1.107.74 1.107.74.642 1.1 1.678.783 2.085.597.065-.463.252-.78.46-.958-1.61-.183-3.3-.805-3.3-3.578 0-.79.28-1.44.74-1.95-.08-.183-.32-.925.064-1.92 0 0 .6-.195 1.98.74a6.72 6.72 0 0 1 1.8-.245c.61.003 1.22.08 1.8.244 1.37-.936 1.97-.74 1.97-.74.384.995.144 1.737.07 1.92.46.51.74 1.16.74 1.95 0 2.777-1.69 3.39-3.31 3.57.26.23.49.672.49 1.36 0 .984-.008 1.777-.008 1.995 0 .214.145.46.55.384A8.003 8.003 0 0 0 8 .154z"/>
+                        </svg> GitHub
+                    </a>
+                    </div>
+                    <div class="technologiesUsed">
+                        <div class="techBox">Python</div>
+                        <div class="techBox">Machine Learning</div>
+                        <div class="techBox">Bag of Words</div>
+                        <div class="techBox">TFIDF</div>
+                        <div class="techBox">FastAPI</div>
+                    </div>
+                </div>
+                <!-- House-Price-Predictor -->
+                <div class="projectItem">
+                    <img src="images/house_price.png" alt="House-Price-Predictor">
+                    <div class="projectDetails">
+                        <h2>House-Price-Predictor</h2>
+                        <br><br>
+                        <ul>
+                            <li>Accurate Bengaluru house price predictions based on location, amenities, and area.</li>
+                            <li>Utilizes data science libraries for data import, cleaning, and visualization.</li>
+                        </ul>
+                        <br><br><br><br>
+                        <a href="https://github.com/Harshch42/House-Price-Predictor.git" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 .154a8 8 0 0 0-2.534 15.635c.4.07.546-.174.546-.385 0-.19-.007-.692-.01-1.36-2.01.368-2.44-.49-2.44-.49-.33-.838-.805-1.06-.805-1.06-.656-.448.05-.44.05-.44.725.05 1.107.74 1.107.74.642 1.1 1.678.783 2.085.597.065-.463.252-.78.46-.958-1.61-.183-3.3-.805-3.3-3.578 0-.79.28-1.44.74-1.95-.08-.183-.32-.925.064-1.92 0 0 .6-.195 1.98.74a6.72 6.72 0 0 1 1.8-.245c.61.003 1.22.08 1.8.244 1.37-.936 1.97-.74 1.97-.74.384.995.144 1.737.07 1.92.46.51.74 1.16.74 1.95 0 2.777-1.69 3.39-3.31 3.57.26.23.49.672.49 1.36 0 .984-.008 1.777-.008 1.995 0 .214.145.46.55.384A8.003 8.003 0 0 0 8 .154z"/>
+                        </svg> GitHub
+                    </a>
+                    </div>
+                    <div class="technologiesUsed">
+                        <div class="techBox">Python</div>
+                        <div class="techBox">Machine Learning</div>
+                        <div class="techBox">Scikit-Learn</div>
+                        <div class="techBox">Flask</div>
+                    </div>
+                </div>
+                <!-- Add more Data Science Projects as needed -->
+
+            </div>
+        </section>
+
+        <!-- Data Analysis Projects -->
+        <section class="projectCategory">
+            <h2>Data Analysis Projects</h2>
+            <div class="projectsList">
+
+                <!-- IMS-Python -->
+                <div class="projectItem">
+                    <img src="images/ims.png" alt="Inventory Management System">
+                    <div class="projectDetails">
+                        <h2>Inventory Management System</h2>
+                        <br>
+                        <ul>
+                            <li>Built using Python and Tkinter, this system facilitates inventory control, order tracking, and bill generation.</li>
+                            <li>Utilized SQLite3 and MySQL Workbench for database management and Tableau/Matplotlib for visual insights, enhancing inventory accuracy and decision-making.</li>
+                        </ul>
+                        <a href="https://github.com/Harshch42/ims-Python.git" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 .154a8 8 0 0 0-2.534 15.635c.4.07.546-.174.546-.385 0-.19-.007-.692-.01-1.36-2.01.368-2.44-.49-2.44-.49-.33-.838-.805-1.06-.805-1.06-.656-.448.05-.44.05-.44.725.05 1.107.74 1.107.74.642 1.1 1.678.783 2.085.597.065-.463.252-.78.46-.958-1.61-.183-3.3-.805-3.3-3.578 0-.79.28-1.44.74-1.95-.08-.183-.32-.925.064-1.92 0 0 .6-.195 1.98.74a6.72 6.72 0 0 1 1.8-.245c.61.003 1.22.08 1.8.244 1.37-.936 1.97-.74 1.97-.74.384.995.144 1.737.07 1.92.46.51.74 1.16.74 1.95 0 2.777-1.69 3.39-3.31 3.57.26.23.49.672.49 1.36 0 .984-.008 1.777-.008 1.995 0 .214.145.46.55.384A8.003 8.003 0 0 0 8 .154z"/>
+                            </svg> GitHub
+                        </a>
+                    </div>
+                    <div class="technologiesUsed">
+                        <div class="techBox">Python</div>
+                        <div class="techBox">Tkinter</div>
+                        <div class="techBox">SQLite3</div>
+                        <div class="techBox">MySQL</div>
+                        <div class="techBox">Tableau</div>
+                        <div class="techBox">Matplotlib</div>
+                    </div>
+                </div>
+
+                <!-- Tableau Projects -->
+                <div class="projectItem">
+                    <img src="images/hr_dashboard.png" alt="Tableau Projects">
+                    <div class="projectDetails">
+                        <h2>Tableau Projects</h2>
+                        <br><br>
+                        <ul>
+                            <li>Crafting dynamic Tableau dashboards to distill meaningful insights.</li>
+                            <li>Converting data into actionable knowledge through interactive visuals.</li>
+                        </ul>
+                        <br><br><br><br>
+                        <a href="https://github.com/Harshch42/Tableau-Projects.git" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 .154a8 8 0 0 0-2.534 15.635c.4.07.546-.174.546-.385 0-.19-.007-.692-.01-1.36-2.01.368-2.44-.49-2.44-.49-.33-.838-.805-1.06-.805-1.06-.656-.448.05-.44.05-.44.725.05 1.107.74 1.107.74.642 1.1 1.678.783 2.085.597.065-.463.252-.78.46-.958-1.61-.183-3.3-.805-3.3-3.578 0-.79.28-1.44.74-1.95-.08-.183-.32-.925.064-1.92 0 0 .6-.195 1.98.74a6.72 6.72 0 0 1 1.8-.245c.61.003 1.22.08 1.8.244 1.37-.936 1.97-.74 1.97-.74.384.995.144 1.737.07 1.92.46.51.74 1.16.74 1.95 0 2.777-1.69 3.39-3.31 3.57.26.23.49.672.49 1.36 0 .984-.008 1.777-.008 1.995 0 .214.145.46.55.384A8.003 8.003 0 0 0 8 .154z"/>
+                        </svg> GitHub
+                    </a>
+                    </div>
+                    <div class="technologiesUsed">
+                        <div class="techBox">Tableau</div>
+                        <div class="techBox">PostgreSQL</div>
+                        <div class="techBox">SQL</div>
+                        <div class="techBox">MySQL</div>
+                    </div>
+                </div>
+
+                <!-- PowerBI Projects -->
+                <div class="projectItem">
+                    <img src="images/ECommerce.png" alt="Power BI Projects">
+                    <div class="projectDetails">
+                        <h2>Power BI Projects</h2>
+                        <br><br>
+                        <ul>
+                            <li>Harnessing the capabilities of Power BI to transform data into actionable insights through compelling visualizations.</li>
+                            <li>Creating engaging Power BI dashboards that tell data-driven stories and empower informed decision-making.</li>
+                        </ul>
+                        <br><br>
+                        <a href="https://github.com/Harshch42/Power-BI-Projects.git" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 .154a8 8 0 0 0-2.534 15.635c.4.07.546-.174.546-.385 0-.19-.007-.692-.01-1.36-2.01.368-2.44-.49-2.44-.49-.33-.838-.805-1.06-.805-1.06-.656-.448.05-.44.05-.44.725.05 1.107.74 1.107.74.642 1.1 1.678.783 2.085.597.065-.463.252-.78.46-.958-1.61-.183-3.3-.805-3.3-3.578 0-.79.28-1.44.74-1.95-.08-.183-.32-.925.064-1.92 0 0 .6-.195 1.98.74a6.72 6.72 0 0 1 1.8-.245c.61.003 1.22.08 1.8.244 1.37-.936 1.97-.74 1.97-.74.384.995.144 1.737.07 1.92.46.51.74 1.16.74 1.95 0 2.777-1.69 3.39-3.31 3.57.26.23.49.672.49 1.36 0 .984-.008 1.777-.008 1.995 0 .214.145.46.55.384A8.003 8.003 0 0 0 8 .154z"/>
+                        </svg> GitHub
+                    </a>
+                    </div>
+                    <div class="technologiesUsed">
+                        <div class="techBox">Power BI</div>
+                        <div class="techBox">PostgreSQL</div>
+                        <div class="techBox">SQL</div>
+                        <div class="techBox">MySQL</div>
+                    </div>
+                </div>
+                <!-- Add more Data Analysis Projects as needed -->
+
+            </div>
+        </section>
+
+        <!-- Web Development Projects -->
+        <section class="projectCategory">
+            <h2>Web Development Projects</h2>
+            <div class="projectsList">
+
+                <!-- Web Development Project 1 -->
+
+                <!-- Portfolio Website -->
+                <div class="projectItem">
+                    <img src="images/portfolio_home.png" alt="Portfolio Website">
+                    <div class="projectDetails">
+                        <h2>Portfolio Website</h2>
+                        <br>
+                        <ul>
+                            <li>Built using Python and Tkinter, this system facilitates inventory control, order tracking, and bill generation.</li>
+                            <li>Utilized SQLite3 and MySQL Workbench for database management and Tableau/Matplotlib for visual insights, enhancing inventory accuracy and decision-making.</li>
+                        </ul>
+                        <a href="https://github.com/Harshch42/Portfolio-Harsh.git" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 .154a8 8 0 0 0-2.534 15.635c.4.07.546-.174.546-.385 0-.19-.007-.692-.01-1.36-2.01.368-2.44-.49-2.44-.49-.33-.838-.805-1.06-.805-1.06-.656-.448.05-.44.05-.44.725.05 1.107.74 1.107.74.642 1.1 1.678.783 2.085.597.065-.463.252-.78.46-.958-1.61-.183-3.3-.805-3.3-3.578 0-.79.28-1.44.74-1.95-.08-.183-.32-.925.064-1.92 0 0 .6-.195 1.98.74a6.72 6.72 0 0 1 1.8-.245c.61.003 1.22.08 1.8.244 1.37-.936 1.97-.74 1.97-.74.384.995.144 1.737.07 1.92.46.51.74 1.16.74 1.95 0 2.777-1.69 3.39-3.31 3.57.26.23.49.672.49 1.36 0 .984-.008 1.777-.008 1.995 0 .214.145.46.55.384A8.003 8.003 0 0 0 8 .154z"/>
+                            </svg> GitHub
+                        </a>
+                    </div>
+                    <div class="technologiesUsed">
+                        <div class="techBox">HTML</div>
+                        <div class="techBox">CSS</div>
+                        <div class="techBox">JavaScript</div>
+                    </div>
+                </div>
+
+                <!-- Weather App Website -->
+                <div class="projectItem">
+                    <img src="images/weather.png" alt="Weather App">
+                    <div class="projectDetails">
+                        <h2>Weather App</h2>
+                        <br>
+                        <ul>
+                            <li>A user-friendly weather app providing real-time weather updates for specified locations.</li>
+                            <li>Responsive design for seamless use on various devices and screen sizes.</li>
+                        </ul>
+                        <br><br><br>
+                        <a href="https://github.com/Harshch42/Weather-app.git" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 .154a8 8 0 0 0-2.534 15.635c.4.07.546-.174.546-.385 0-.19-.007-.692-.01-1.36-2.01.368-2.44-.49-2.44-.49-.33-.838-.805-1.06-.805-1.06-.656-.448.05-.44.05-.44.725.05 1.107.74 1.107.74.642 1.1 1.678.783 2.085.597.065-.463.252-.78.46-.958-1.61-.183-3.3-.805-3.3-3.578 0-.79.28-1.44.74-1.95-.08-.183-.32-.925.064-1.92 0 0 .6-.195 1.98.74a6.72 6.72 0 0 1 1.8-.245c.61.003 1.22.08 1.8.244 1.37-.936 1.97-.74 1.97-.74.384.995.144 1.737.07 1.92.46.51.74 1.16.74 1.95 0 2.777-1.69 3.39-3.31 3.57.26.23.49.672.49 1.36 0 .984-.008 1.777-.008 1.995 0 .214.145.46.55.384A8.003 8.003 0 0 0 8 .154z"/>
+                            </svg> GitHub
+                        </a>
+                    </div>
+                    <div class="technologiesUsed">
+                        <div class="techBox">HTML</div>
+                        <div class="techBox">CSS</div>
+                        <div class="techBox">JavaScript</div>
+                        <div class="techBox">Weather API</div>
+                    </div>
+                </div>
+
+
+                <!-- To-do List Website -->
+                <div class="projectItem">
+                    <img src="images/to-do.png" alt="To-do List">
+                    <div class="projectDetails">
+                        <h2>To-do List</h2>
+                        <br>
+                        <ul>
+                            <li>A user-friendly to-do list website with essential features for task management and organization.</li>
+                            <li>Includes functions to add, edit, delete, and mark tasks as completed, ensuring a straightforward and intuitive user experience.</li>
+                        </ul>
+                        <br><br>
+                        <a href="https://github.com/Harshch42/To-do-List.git" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 .154a8 8 0 0 0-2.534 15.635c.4.07.546-.174.546-.385 0-.19-.007-.692-.01-1.36-2.01.368-2.44-.49-2.44-.49-.33-.838-.805-1.06-.805-1.06-.656-.448.05-.44.05-.44.725.05 1.107.74 1.107.74.642 1.1 1.678.783 2.085.597.065-.463.252-.78.46-.958-1.61-.183-3.3-.805-3.3-3.578 0-.79.28-1.44.74-1.95-.08-.183-.32-.925.064-1.92 0 0 .6-.195 1.98.74a6.72 6.72 0 0 1 1.8-.245c.61.003 1.22.08 1.8.244 1.37-.936 1.97-.74 1.97-.74.384.995.144 1.737.07 1.92.46.51.74 1.16.74 1.95 0 2.777-1.69 3.39-3.31 3.57.26.23.49.672.49 1.36 0 .984-.008 1.777-.008 1.995 0 .214.145.46.55.384A8.003 8.003 0 0 0 8 .154z"/>
+                            </svg> GitHub
+                        </a>
+                    </div>
+                    <div class="technologiesUsed">
+                        <div class="techBox">HTML</div>
+                        <div class="techBox">CSS</div>
+                        <div class="techBox">JavaScript</div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Add more Web Development Projects as needed -->
+
+            </div>
+        </section>
+    </section>
+    <hr>
+    <!-- Coding Profiles Section -->
+    <section id = 'codingProfiles' class="codingProfiles">
+        <h1>Coding Profiles</h1>
+        <div class="profileItem">
+            <img src="images/leetcode_icon.png" alt="leetcode">
+            <a href="https://leetcode.com/Harsh425/" class="profileLink" target="_blank">Leetcode (400+ Problems Solved)</a>
+        </div>
+        <div class="profileItem">
+            <i class="fab fa-hackerrank profileIcon"></i>
+            <a href="https://www.hackerrank.com/harshchaudhari11" class="profileLink" target="_blank">Hackerrank (5 star - DSA, Python and SQL)</a>
+        </div>
+        <div class="profileItem">
+            <i class="fab fa-kaggle profileIcon"></i>
+            <a href="https://www.kaggle.com/harshchaudhari42" class="profileLink" target="_blank">Kaggle (Competitions Contributor)</a>
+        </div>
+        <div class="profileItem">
+            <i class="fas fa-laptop-code profileIcon"></i>
+            <a href="https://www.codingninjas.com/studio/profile/795b0032-b542-4eab-a921-69cf39dfdb2b" class="profileLink" target="_blank">Codestudio</a>
+        </div>
+        <div class="profileItem">
+            <i class="fas fa-code-branch profileIcon"></i>
+            <a href="https://www.codechef.com/users/harsh425" class="profileLink" target="_blank">CodeChef (Rating - 1494)</a>
+        </div>
+        <div class="profileItem">
+            <i class="fas fa-code profileIcon"></i>
+            <a href="https://codeforces.com/profile/harsh425" class="profileLink" target="_blank">Codeforces (Rating - 936)</a>
+        </div>
+    </section>
+    
+
+    <div class="fixed-icons">
+        <a href="tel:+918788546497" target="_blank"><i class="fas fa-phone"></i></a>
+        <a href="mailto:harshchaudhari150@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+        <a href="https://github.com/Harshch42" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/harsh-chaudhari-290971228/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    
+`
     </main>
 
+
+    <!-- Footer -->
     <footer>
-        <div class="footer">
-            <div class="footer-first">
-                <h3>Harsh's Developer Portfolio</h3>
-            </div>
-            <div class="footer-second">
-                <ul>
-                    <li>Home</li>
-                    <li>About </li>
-                    <li>Contact</li>
-                    <li>Services</li>
-                </ul>
-            </div>
-            <div class="footer-third">
-                <ul>
-                    <li>Home</li>
-                    <li>About </li>
-                    <li>Contact</li>
-                    <li>Services</li>
-                </ul>
-            </div>
-            <div class="footer-fourth">
-                <ul>
-                    <li>Home</li>
-                    <li>About </li>
-                    <li>Contact</li>
-                    <li>Services</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-rights">
+        <div class="footer-rights">&copy;
             www.harshchaudhari.com | All rights reserved
         </div>
     </footer>
+    
+
+    
+    <!-- JavaScript -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
     var typed = new Typed('#element', {
@@ -216,6 +478,27 @@
         typeSpeed: 50,
     });
     </script>
+    <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    </script>
+
+
+
+
+    
 
 </body>
 </html>
