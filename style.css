@@ -168,6 +168,7 @@ main hr {
     font-size: 1.5rem;
     /* line-height: 1.5; */
     text-align: center;
+    width: 100%;
     /* padding: 0 40%; */
 }
 
@@ -184,8 +185,7 @@ main hr {
 
 .skillsSection ul {
     list-style: none; /* Remove default bullet points */
-    padding-left: 200px;
-    text-align: left;
+    text-align: center;
 
 }
 
@@ -201,26 +201,6 @@ main hr {
     line-height: 1.5;
 }
 
-.skillsSection li::before {
-    content: "•"; /* Bullet point character */
-    font-size: 18px;
-    margin-right: 10px; /* Add spacing between bullet point and text */
-}
-
-
-/* .skillItem { */
-    /* display: flex; Use flexbox for proper alignment */
-    /* align-items: center; Align text and bullet points vertically */
-    /* margin-left: 20px; Adjust the left margin as needed */
-/* } */
-
-/* .skillItem::before {
-    content: "\2022"; /* Bullet point character */
-    /* color: #1e2167; /* Color of the bullet point */
-    /* font-size: 16px;
-    margin-right: 10px; /* Add some spacing between bullet point and text */
-    /* align-self: flex-start; Align the bullet point with the top of the text */
-/* }  */
 
 
 
